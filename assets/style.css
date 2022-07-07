@@ -1,0 +1,191 @@
+* {
+	box-sizing: border-box;
+}
+
+main {
+	padding: 20px;
+	font-family: "Open Sans", sans-serif;
+}
+
+/* Nav */
+nav {
+	position: sticky;
+	top: 0;
+	background-color: #222831;
+	padding: 5px;
+	overflow: auto;
+	justify-items: center;
+}
+
+nav h1 {
+	float: left;
+	color: white;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+	font-size: 30px;
+	font-family: "Viga", sans-serif;
+	margin-left: 50px;
+}
+
+nav ul {
+	float: right;
+	margin-top: 35px;
+	margin-right: 50px;
+}
+
+nav a {
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover {
+	color: grey;
+	border-bottom: 5px solid #1363df;
+}
+
+nav li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+/* Header */
+header {
+	display: inline;
+}
+
+.jumbotron {
+	padding: 60px;
+	background-color: #393e46;
+	font-family: "Viga", sans-serif;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+}
+
+.jumbotron h1 {
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Body */
+h2 {
+	color: #393e46;
+}
+
+h3 {
+	color: #4cacbc;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#content {
+	float: left;
+	width: 75%;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+/* Gambar */
+.image {
+	width: 100%;
+	max-height: 300px;
+	border-radius: 10px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.line {
+	border-top: 3px solid rgba(211, 211, 211, 0.5);
+}
+
+/* Aside */
+aside {
+	float: right;
+	width: 24%;
+	background-color: #dddddd;
+}
+
+.center {
+	text-align: center;
+}
+
+.img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	height: 200px;
+	background-image: url(../assets/image/cv.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.foto2 {
+	background-image: url(../assets/image/cv2.jpg);
+}
+
+aside h2,
+aside h3 {
+	color: black;
+}
+
+aside section {
+	padding-bottom: 30px;
+	overflow-x: auto;
+}
+
+aside table {
+	width: 350px;
+	text-align: left;
+}
+
+table th,
+td {
+	height: 40px;
+}
+
+/* Footer */
+footer {
+	clear: both;
+	padding: 20px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	background-color: #222831;
+}
+
+@media screen and (max-width: 1000px) {
+	#content,
+	aside {
+		width: 100%;
+		padding: 20px;
+	}
+
+	nav h1 {
+		display: none;
+	}
+
+	nav ul {
+		float: none;
+	}
+
+	nav li {
+		width: 100%;
+		margin-right: 10px;
+	}
+
+	nav a {
+		font-size: 18px;
+	}
+}
